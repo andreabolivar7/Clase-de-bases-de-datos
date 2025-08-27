@@ -1,0 +1,13 @@
+use ejemplo;
+select * from docentes;
+select doc_nombre from docentes; 
+select doc_nombre from docentes where doc_nombre = 'Jorge Ramirez';
+select tut_fecha_hora from tutorias where tut_fecha_hora = "2023-08-01 10:00:00";
+select doc_nombre from docentes order by doc_nombre desc; 
+select * from docentes limit 10;
+select doc_id from docentes limit 10;
+select doc_nombre from docentes where doc_nombre like 'i%';
+select doc_nombre from docentes where doc_nombre like '%z';
+select doc_nombre from docentes where doc_nombre like '%ramirez%';
+select count(*) from tutorias;
+select est_carrera, count(*) from estudiantes group by est_carrera;
